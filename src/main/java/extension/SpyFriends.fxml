@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="165.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.291" xmlns:fx="http://javafx.com/fxml/1" fx:controller="extension.SpyFriends">
+    <CheckBox fx:id="checkFollow" layoutX="14.0" layoutY="107.0" mnemonicParsing="false" text="Follow" />
+    <CheckBox fx:id="showGroup" layoutX="15.0" layoutY="138.0" mnemonicParsing="false" text="Show group" />
+    <Label fx:id="roomOwner" layoutX="14.0" layoutY="15.0" prefHeight="25.0" prefWidth="109.0" text="Room owner: " />
+    <Label fx:id="roomName" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="109.0" text="Room name: " />
+    <Label fx:id="roomDescription" layoutX="12.0" layoutY="65.0" prefHeight="25.0" prefWidth="109.0" text="Room description: " />
+    <Label fx:id="roomOwnerText" layoutX="132.0" layoutY="15.0" prefHeight="25.0" prefWidth="438.0" />
+    <Label fx:id="roomNameText" layoutX="132.0" layoutY="40.0" prefHeight="25.0" prefWidth="438.0" />
+    <Label fx:id="roomDescriptionText" alignment="TOP_LEFT" layoutX="132.0" layoutY="70.0" prefHeight="39.0" prefWidth="438.0" wrapText="true" />
+</AnchorPane>
