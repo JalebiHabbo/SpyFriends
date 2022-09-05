@@ -42,7 +42,7 @@ public class SpyFriends extends ExtensionForm {
             if (!checkFollow.isSelected()) {
                 hMessage.setBlocked(true);
                 int roomCode = hMessage.getPacket().readInteger();
-                sendToServer(new HPacket("GetGuestRoom", HMessage.Direction.TOSERVER, roomCode, 0, 0));
+                sendToServer(new HPacket("GetGuestRoom", HMessage.Direction.TOSERVER, roomCode, 1, 0));
             }
         });
 
@@ -58,21 +58,15 @@ public class SpyFriends extends ExtensionForm {
             hMessage.getPacket().readBoolean();
             hMessage.getPacket().readInteger();
             String room = hMessage.getPacket().readString();
-            Platform.runLater(() -> {
-                roomNameText.setText(room);
-            });
+            Platform.runLater(() -> roomNameText.setText(room));
             hMessage.getPacket().readInteger();
             String owner = hMessage.getPacket().readString();
-            Platform.runLater(() -> {
-                roomOwnerText.setText(owner);
-            });
+            Platform.runLater(() -> roomOwnerText.setText(owner));
             hMessage.getPacket().readInteger();
             hMessage.getPacket().readInteger();
             hMessage.getPacket().readInteger();
             String description = hMessage.getPacket().readString();
-            Platform.runLater(() -> {
-                roomDescriptionText.setText(description);
-            });
+            Platform.runLater(() -> roomDescriptionText.setText(description));
         });
     }
 }
