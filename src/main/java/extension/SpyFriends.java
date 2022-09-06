@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 @ExtensionInfo(
         Title = "SpyFriends",
         Description = "Spy on your friends",
-        Version = "1.0",
+        Version = "1.1",
         Author = "Jalebi"
 )
 public class SpyFriends extends ExtensionForm {
