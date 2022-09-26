@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="165.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.291" xmlns:fx="http://javafx.com/fxml/1" fx:controller="extension.SpyFriends">
-    <CheckBox fx:id="checkFollow" layoutX="14.0" layoutY="107.0" mnemonicParsing="false" text="Follow" />
-    <CheckBox fx:id="showGroup" layoutX="15.0" layoutY="138.0" mnemonicParsing="false" text="Show group" />
-    <Label fx:id="roomOwner" layoutX="14.0" layoutY="15.0" prefHeight="25.0" prefWidth="109.0" text="Room owner: " />
+<AnchorPane prefHeight="146.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="extension.SpyFriends">
+    <CheckBox fx:id="checkFollow" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" text="Follow" />
+    <CheckBox fx:id="showGroup" layoutX="80.0" layoutY="120.0" mnemonicParsing="false" text="Show group" />
+    <Label fx:id="roomOwner" layoutX="12.0" layoutY="14.0" prefHeight="25.0" prefWidth="109.0" text="Room owner: " />
     <Label fx:id="roomName" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="109.0" text="Room name: " />
-    <Label fx:id="roomDescription" layoutX="12.0" layoutY="65.0" prefHeight="25.0" prefWidth="109.0" text="Room description: " />
-    <Label fx:id="roomOwnerText" layoutX="132.0" layoutY="15.0" prefHeight="25.0" prefWidth="438.0" />
-    <Label fx:id="roomNameText" layoutX="132.0" layoutY="40.0" prefHeight="25.0" prefWidth="438.0" />
-    <Label fx:id="roomDescriptionText" alignment="TOP_LEFT" layoutX="132.0" layoutY="70.0" prefHeight="39.0" prefWidth="438.0" wrapText="true" />
+    <Label fx:id="roomDescription" layoutX="12.0" layoutY="90.0" prefHeight="25.0" prefWidth="109.0" text="Room description: " />
+    <Label fx:id="roomOwnerText" layoutX="89.0" layoutY="14.0" prefHeight="25.0" prefWidth="332.0" />
+    <Label fx:id="roomNameText" layoutX="89.0" layoutY="40.0" prefHeight="25.0" prefWidth="332.0" />
+    <Label fx:id="roomDescriptionText" layoutX="121.0" layoutY="87.0" prefHeight="32.0" prefWidth="311.0" wrapText="true">
+      <font>
+         <Font size="11.0" />
+      </font></Label>
+   <CheckBox fx:id="showPicture" layoutX="178.0" layoutY="120.0" mnemonicParsing="false" text="Show picture" />
+   <Label fx:id="roomCount" layoutX="14.0" layoutY="65.0" prefHeight="25.0" prefWidth="109.0" text="Players in room:" />
+   <Label fx:id="roomCountText" layoutX="108.0" layoutY="65.0" prefHeight="25.0" prefWidth="319.0" />
+    <ImageView fx:id="roomPictureView" fitHeight="130.0" fitWidth="130.0" layoutX="440.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
 </AnchorPane>
