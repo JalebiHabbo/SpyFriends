@@ -86,6 +86,8 @@ public class SpyFriends extends ExtensionForm {
             int roomCode = hMessage.getPacket().readInteger();
             if (showPicture.isSelected()) {
                 setImage(roomCode);
+            } else {
+                roomPictureView.setImage(null);
             }
             String room = hMessage.getPacket().readString();
             Platform.runLater(() -> roomNameText.setText(room));
